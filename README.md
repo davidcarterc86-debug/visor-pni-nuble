@@ -1,15 +1,11 @@
-# Visor PNI Nuble - codigo mensual
+# Visor PNI Nuble mensual
 
-Repositorio privado de preparacion. GitHub Pages no esta habilitado.
+Visor mensual con datos agregados reales. Publicacion autorizada institucionalmente con el nivel de detalle actual, incluidos conteos pequenos.
 
-Contiene exclusivamente index.html (diseno y logo MINSAL embebido) y visor_mensual.js (interfaz, filtro DOSIS dependiente y calculos mensuales aprobados). No contiene datos, CSV, registros individuales, cubos, scripts de procesamiento ni auditorias.
+Sitio: https://davidcarterc86-debug.github.io/visor-pni-nuble/
 
-Sin datos, la interfaz muestra un aviso y deshabilita controles; no usa cifras simuladas. El filtro DOSIS conserva las denominaciones literales y depende de la vacuna/grupo.
+Paquete estatico: index.html, visor_mensual.js, datos_mensuales.js y .nojekyll. Rutas relativas; logo embebido. Pages desde main / (root).
 
-## Incorporacion futura
+Conserva vacunas/grupos, formulaciones, dosis dependientes, ambitos, 21 comunas, graficos y exportacion. Solo conteos absolutos de registros, sin deduplicacion. Comparaciones entre meses completos comunes; octubre 2026 parcial se conserva en totales e intranual.
 
-La modalidad de acceso y divulgacion debe definirse con la encargada de vacunas antes de agregar datos o activar cualquier publicacion. El JS espera un archivo local relativo datos_mensuales.js que defina window.PNI_DATA con el contrato mensual existente: classes, doses, communes, lastMonth, completeMonths, totals y rows. No agregarlo todavia.
-
-.gitignore usa una lista permitida de archivos de codigo para evitar incorporar datos por accidente. Cualquier futura inclusion de datos requiere una decision explicita y revision de esta lista. No activar Pages ni hacer publico este repositorio por ahora.
-
-La copia mensual y V3.1 locales permanecen independientes e intactas. Las verificaciones estadisticas existentes no se repitieron en esta preparacion.
+No contiene CSV originales ni registros individuales. Las fuentes y versiones locales se mantienen independientes.
